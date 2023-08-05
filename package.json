@@ -1,7 +1,7 @@
 {
   "name": "figma_plugin_shn",
   "version": "1.0.0",
-  "description": "![Figma Notion](https://github.com/TH-Activities/saturday-hack-night-template/assets/64391274/85d3fbb8-aed6-4751-b051-4539df392f1a)",
+  "description": "Plugin for Figma team",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
