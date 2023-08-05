@@ -4,7 +4,7 @@
 # Project Name
 Long Description about project. This project do that. This project is awesome...
 ## Team members
-1. [Name 1](https://github.com/winter-x64)
+1. [Akhil B Xavier](https://github.com/winter-x64)
 2. [Name 2](https://github.com/S-A-T-07)
 ## Link to product walkthrough
 [link to video](Link Here)
