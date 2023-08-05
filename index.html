@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spin Wheel</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    #wheel {
+      /* position: relative; */
+      margin: 50px auto;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background-image: conic-gradient(
+        from -90deg,
+        #ff0000 0deg 60deg,
+        #00ff00 60deg 120deg,
+        #0000ff 120deg 180deg,
+        #ffff00 180deg 240deg,
+        #ff00ff 240deg 300deg,
+        #00ffff 300deg 360deg
+      );
+      transition: transform 3s ease;
+    }
+    #spinButton {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      background-color: #333;
+      color: #fff;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Spin the Wheel!</h1>
+  <div id="wheel"></div>
+  <button id="spinButton" onclick="spinWheel()">SPIN</button>
+
+  <script>
+    let wheel = document.getElementById('wheel');
+
+    function spinWheel() {
+      let randomDegree = Math.floor(Math.random() * 3600) + 720;
+      wheel.style.transition = 'transform 3s ease';
+      wheel.style.transform = `rotate(${randomDegree}deg)`;
+
+      setTimeout(showResult, 3000);
+    }
+
+    function showResult() {
+      let currentRotation = getComputedStyle(wheel).transform;
+      let angle = getAngleFromMatrix(currentRotation);
+      let section = Math.floor(angle / 60);
+      
+      let result;
+      switch (section) {
+        case 0:
+          result = 'Red Section';
+          break;
+        case 1:
+          result = 'Green Section';
+          break;
+        case 2:
+          result = 'Blue Section';
+          break;
+        case 3:
+          result = 'Yellow Section';
+          break;
+        case 4:
+          result = 'Magenta Section';
+          break;
+        case 5:
+          result = 'Cyan Section';
+          break;
+      }
+
+      alert(`You won: ${result}`);
+    }
+
+    function getAngleFromMatrix(matrixString) {
+      let values = matrixString.split('(')[1].split(')')[0].split(',');
+      let a = values[0];
+      let b = values[1];
+      let angle = Math.round(Math.atan2(b, a) * (180 / Math.PI));
+      return angle < 0 ? angle + 360 : angle;
+    }
+  </script>
+</body>
+</html>
