@@ -1,8 +1,10 @@
 ![Figma Notion](https://github.com/TH-Activities/saturday-hack-night-template/assets/64391274/85d3fbb8-aed6-4751-b051-4539df392f1a)
 
 
-# Project Name
-Long Description about project. This project do that. This project is awesome...
+# Spin The Wheel
+
+A spin wheel whose no.of slots are divided according to the no.of users at the time. According to the number each dares are given. If only 2 users exsit at that time then we will turn the wheel to a coin with head and tail each having a output/dare.
+
 ## Team members
 1. [Akhil B Xavier](https://github.com/winter-x64)
 2. [Soumya Annie Thomas](https://github.com/S-A-T-07)
@@ -10,7 +12,9 @@ Long Description about project. This project do that. This project is awesome...
 [link to video](Link Here)
 ## How it Works ?
 1. Explaining the working of project
+   
 2. Embed video of project demo
+   
 ## Libraries used
 Library Name - Version
 ## How to configure
