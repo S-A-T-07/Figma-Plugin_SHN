@@ -9,15 +9,17 @@ A spin wheel whose no.of slots are divided according to the no.of users at the t
 1. [Akhil B Xavier](https://github.com/winter-x64)
 2. [Soumya Annie Thomas](https://github.com/S-A-T-07)
 ## Link to product walkthrough
-[link to video](Link Here)
+[link to video](https://drive.google.com/file/d/1H_BqmViZgqkxPZaG1L5M-ZfRgadjilqU/view?usp=sharing)
 ## How it Works ?
 1. Explaining the working of project
    
 2. Embed video of project demo
    
 ## Libraries used
-Library Name - Version
+Figma
 ## How to configure
 Instructions for setting up project
+run `npm install`
+run `npm run build`
 ## How to Run
 Instructions for running
