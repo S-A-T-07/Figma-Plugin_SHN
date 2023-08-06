@@ -1,11 +1,16 @@
 {
-  "name": "figma_plugin_shn",
+  "name": "TesterPluginv2",
   "version": "1.0.0",
-  "description": "Plugin for Figma team",
-  "main": "main.js",
+  "description": "Your Figma Plugin",
+  "main": "code.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc -p tsconfig.json",
+    "watch": "npm run build -- --watch"
   },
   "author": "",
-  "license": "ISC"
+  "license": "",
+  "devDependencies": {
+    "@figma/plugin-typings": "^1.72.0",
+    "typescript": "^5.1.6"
+  }
 }

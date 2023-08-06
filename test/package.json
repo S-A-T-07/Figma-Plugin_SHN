@@ -1,0 +1,11 @@
+{
+  "name": "figma_plugin_shn",
+  "version": "1.0.0",
+  "description": "Plugin for Figma team",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
